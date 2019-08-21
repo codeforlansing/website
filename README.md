@@ -1,6 +1,6 @@
 # www
 
-> Lansing.Codes home page
+> Code for Lansing home page
 
 ## Environment
 
