@@ -13,16 +13,16 @@
         <section-heading
           h1
           blue
-          heading="Lansing Codes"
-          subheading="Events and resources for Lansing coders"
+          heading="Code for Lansing"
+          subheading="A part of the Greater Code for America Initiative"
         />
         <p class="mt-0 mb-4">
-          For those who code or aspire to, professionally or as a hobby
+          We foster relationships between government, nonprofit, academic, for-profit companies, residents, civic technologists, analysts, designers, and many more.
         </p>
         <img
           class="h-32 w-32"
           src="../assets/images/icon-tall-square-fixed-300-transparent.png"
-          alt="Lansing Codes Logo"
+          alt="Code for Lansing Logo"
         >
       </section>
 

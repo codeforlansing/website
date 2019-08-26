@@ -9,7 +9,7 @@
         <section-heading
           white
           heading="Upcoming Events"
-          subheading="events and resources for Lansing coders"
+          subheading="Upcoming Weekly Hack Nights and Hackathons"
         />
 
         <div class="w-full">

@@ -2,8 +2,7 @@
   <div>
     <welcome/>
     <events/>
-    <meetups/>
-    <resources/>
+    <civic/>
     <sponsors/>
     <newsletter/>
   </div>
@@ -12,8 +11,7 @@
 <script>
 import welcome from '~/components/welcome'
 import events from '~/components/events'
-import meetups from '~/components/meetups'
-import resources from '~/components/resources'
+import resources from '~/components/civic'
 import sponsors from '~/components/sponsors'
 import newsletter from '~/components/newsletter'
 
@@ -21,8 +19,7 @@ export default {
   components: {
     welcome,
     events,
-    meetups,
-    resources,
+    civic,
     sponsors,
     newsletter
   },
