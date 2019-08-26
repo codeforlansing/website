@@ -7,7 +7,7 @@
       id="contactUs"
       white
       heading="Contact Us"
-      subheading="know an event or resource we're missing? let us know or follow us"
+      subheading="Support our Civic Engagement, Get Involved, Donate"
       class="w-full"
     />
     <nav
@@ -48,27 +48,27 @@ export default {
         },
         {
           name: 'GitHub',
-          href: 'https://github.com/lansingcodes/',
+          href: 'https://github.com/codeforlansing/',
           iconSet: 'fab',
           icon: 'github'
         },
         {
           name: 'Email',
-          href: 'mailto:lansingcodes@gmail.com',
+          href: 'mailto:contact@codeforlansing.org',
           iconSet: 'fas',
           icon: 'envelope'
         },
         {
           name: 'Facebook',
-          href: 'https://www.facebook.com/LansingCodes/',
+          href: 'https://www.facebook.com/code4lansing/',
           iconSet: 'fab',
           icon: 'facebook'
         },
         {
-          name: 'Twitter',
-          href: 'https://twitter.com/lansingcodes',
+          name: 'MeetUp',
+          href: 'https://www.meetup.com/Code-for-Lansing/',
           iconSet: 'fab',
-          icon: 'twitter'
+          icon: 'meetup'
         }
       ]
     }
