@@ -2,7 +2,7 @@
   <div>
     <welcome/>
     <events/>
-    <civic/>
+    <resources/>
     <sponsors/>
     <newsletter/>
   </div>
@@ -11,7 +11,7 @@
 <script>
 import welcome from '~/components/welcome'
 import events from '~/components/events'
-import resources from '~/components/civic'
+import resources from '~/components/resources'
 import sponsors from '~/components/sponsors'
 import newsletter from '~/components/newsletter'
 
@@ -19,7 +19,7 @@ export default {
   components: {
     welcome,
     events,
-    civic,
+    resources,
     sponsors,
     newsletter
   },
