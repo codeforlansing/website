@@ -10,8 +10,8 @@
       >
         <section-heading
           white
-          heading="Civic Engagement"
-          subheading="Code for Lansing addresses local social and civic challenges through creative uses of technology"
+          heading="Beginner Resources"
+          subheading="where to start if you're new to coding"
           class="w-full sm:w-2/5 mb-0 mt-10 mx-auto sm:mx-0"
         />
       </div>

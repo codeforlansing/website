@@ -9,7 +9,7 @@
     <section-heading
       blue
       heading="Our Sponsors"
-      subheading="the organizations that make all this possible!"
+      subheading="the companies that make all this possible!"
       class="md:mb-16 self-end w-full md:w-1/3"
     />
     <div class="hidden md:block md:mb-16 md:w-2/3">
