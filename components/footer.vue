@@ -51,27 +51,21 @@ export default {
         },
         {
           name: 'GitHub',
-          href: urls.github,
+          href: 'https://github.com/codeforlansing',
           iconSet: 'fab',
           icon: 'github'
         },
         {
-          name: 'Email',
-          href: urls.email,
-          iconSet: 'fas',
-          icon: 'envelope'
+          name: 'MeetUp',
+          href: 'https://www.meetup.com/Code-for-Lansing/',
+          iconSet: 'fab',
+          icon: 'meetup'
         },
         {
           name: 'Facebook',
-          href: urls.facebook,
+          href: 'https://www.facebook.com/code4lansing',
           iconSet: 'fab',
           icon: 'facebook'
-        },
-        {
-          name: 'Twitter',
-          href: urls.twitter,
-          iconSet: 'fab',
-          icon: 'twitter'
         }
       ]
     }

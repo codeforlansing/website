@@ -13,15 +13,15 @@
         <section-heading
           h1
           blue
-          heading="Lansing Codes"
-          subheading="Events and resources for Lansing coders"
+          heading="Code for Lansing"
+          subheading="A Code for America Initiative"
         />
         <p class="mt-0 mb-4">
-          For those who code or aspire to, professionally or as a hobby
+          Check out our Weekly Hack Nights, Team Leadership Meetings, and Hackathons
         </p>
         <img
           class="h-32 w-32"
-          src="../assets/images/icon-tall-square-fixed-300-transparent.png"
+          src="/Users/charlaburnett/Documents/codeforlansing/website/assets/images/Brigade logo_Final_v1.jpg"
           alt="Lansing Codes Logo"
         >
       </section>

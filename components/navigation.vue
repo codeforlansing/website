@@ -10,10 +10,10 @@
       <div class="flex items-center flex-no-shrink text-blue-dark">
         <img
           class="h-12 mr-2"
-          src="/Users/charlaburnett/Documents/codeforlansing/website/assets/images/Brigade logo_Final_v1.png"
+          src="https://github.com/codeforlansing/website/blob/b04f3dfcd4e43332903a9bc3184993f16180565e/assets/images/codeforlansinglogo.png"
           alt="Code for Lansing Logo"
         >
-        <span class="font-bold text-xl uppercase">Lansing Codes</span>
+        <span class="font-bold text-xl uppercase">Code for Lansing</span>
       </div>
 
       <!-- Desktop Links -->
@@ -139,18 +139,13 @@ export default {
         },
         {
           name: 'Projects',
-          href: '/#newsletter',
+          href: '/#sponsors',
           iconSet: ['fas', 'envelope']
         },
         {
           name: 'Membership',
           href: '/#resources',
           iconSet: ['fas', 'school']
-        },
-        {
-          name: 'Sponsors',
-          href: '/#sponsors',
-          iconSet: ['fas', 'hand-holding-heart']
         },
         {
           name: 'Contact',

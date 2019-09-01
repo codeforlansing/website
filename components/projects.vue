@@ -8,27 +8,17 @@
   >
     <section-heading
       blue
-      heading="Our Sponsors"
-      subheading="Our sponsors provide funding, event space, software, and other resources for our members and projects"
+      heading="Our Projects"
+      subheading="Each week, programers, project managers, and tech junkies come together with civic leaders to work on a specific project that helps the Lansing community."
       class="md:mb-16 self-end w-full md:w-1/3"
     />
     <div class="hidden md:block md:mb-16 md:w-2/3">
       <img
         src="../assets/images/sponsors-feature.jpg"
-        alt="Our sponsors provide funding, event space, software, and other resources for our members and projects"
+        alt="Each week, programers, project managers, and tech junkies come together with civic leaders to work on a specific project that helps the Lansing community."
         class="ml-8 mb-8 block shadow-lg"
       >
     </div>
-    <card
-      v-for="sponsor in sponsors"
-      :key="sponsor.name"
-      :heading="sponsor.name"
-      :url="sponsor.url"
-      :description="sponsor.description"
-      :img-src="sponsor.logoUrl"
-      :img-alt="sponsor.name + ' logo'"
-      class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 mb-2 md:mb-4"
-    />
   </section>
 </template>
 

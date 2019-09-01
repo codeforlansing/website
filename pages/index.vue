@@ -2,9 +2,9 @@
   <div>
     <welcome/>
     <events/>
-    <meetups/>
+    <membership/>
     <resources/>
-    <sponsors/>
+    <projects/>
     <newsletter/>
   </div>
 </template>
@@ -12,18 +12,18 @@
 <script>
 import welcome from '~/components/welcome'
 import events from '~/components/events'
-import meetups from '~/components/meetups'
+import membership from '~/components/membership'
 import resources from '~/components/resources'
-import sponsors from '~/components/sponsors'
+import projects from '~/components/projects'
 import newsletter from '~/components/newsletter'
 
 export default {
   components: {
     welcome,
     events,
-    meetups,
+    membership,
     resources,
-    sponsors,
+    projects,
     newsletter
   },
   async fetch({ store }) {
