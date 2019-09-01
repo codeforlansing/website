@@ -10,8 +10,8 @@
       <div class="flex items-center flex-no-shrink text-blue-dark">
         <img
           class="h-12 mr-2"
-          src="../assets/images/icon-tall-square-fixed-300-transparent.png"
-          alt="Lansing Codes Logo"
+          src="/Users/charlaburnett/Documents/codeforlansing/website/assets/images/Brigade logo_Final_v1.png"
+          alt="Code for Lansing Logo"
         >
         <span class="font-bold text-xl uppercase">Lansing Codes</span>
       </div>
@@ -138,12 +138,12 @@ export default {
           iconSet: ['far', 'calendar-alt']
         },
         {
-          name: 'Meetups',
-          href: '/#meetups',
-          iconSet: ['far', 'handshake']
+          name: 'Projects',
+          href: '/#newsletter',
+          iconSet: ['fas', 'envelope']
         },
         {
-          name: 'Beginners',
+          name: 'Membership',
           href: '/#resources',
           iconSet: ['fas', 'school']
         },
@@ -151,11 +151,6 @@ export default {
           name: 'Sponsors',
           href: '/#sponsors',
           iconSet: ['fas', 'hand-holding-heart']
-        },
-        {
-          name: 'Newsletter',
-          href: '/#newsletter',
-          iconSet: ['fas', 'envelope']
         },
         {
           name: 'Contact',
