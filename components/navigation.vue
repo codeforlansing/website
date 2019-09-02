@@ -10,7 +10,7 @@
       <div class="flex items-center flex-no-shrink text-blue-dark">
         <img
           class="h-12 mr-2"
-          src="assets/images/Brigade logo_Final_v1.jpg"
+          src="assets/images/codeforlansinglogo.png"
           alt="Code for Lansing Logo"
         >
         <span class="font-bold text-xl uppercase">Code for Lansing</span>
