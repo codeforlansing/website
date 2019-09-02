@@ -21,7 +21,7 @@
         </p>
         <img
           class="h-32 w-32"
-          src="assets/images/Brigade logo_Final_v1.jpg"
+          src="../assets/images/codeforlansinglogo.png"
           alt="Code for Lansing Logo"
         >
       </section>

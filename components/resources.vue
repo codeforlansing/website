@@ -66,7 +66,7 @@ export default {
 
 <style lang="scss" scoped>
 .lc-bg-rtl-gradient {
-  background: linear-gradient(to left, #2979bf, #005198);
+  background: linear-gradient(to left, #cd1f42, #cd1f42);
 }
 
 .lc-bg-downright-trapezoid {

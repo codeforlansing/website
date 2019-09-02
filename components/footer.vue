@@ -7,7 +7,6 @@
       id="contactUs"
       white
       heading="Contact Us"
-      subheading="know an event or resource we're missing? let us know or follow us"
       class="w-full"
     />
     <nav

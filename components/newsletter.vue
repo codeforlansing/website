@@ -6,7 +6,7 @@
     <section-heading
       white
       heading="Stay Informed"
-      subheading="sign up for our newsletter so you never miss out"
+      subheading="Get upates on current projects, events, and resources"
       class="w-full"
     />
     <form
