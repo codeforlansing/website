@@ -133,11 +133,6 @@ export default {
           iconSet: ['fab', 'slack']
         },
         {
-          name: 'Calendar',
-          href: '/#events',
-          iconSet: ['far', 'calendar-alt']
-        },
-        {
           name: 'Membership',
           href: '/#membership',
           iconSet: ['fas', 'school']
@@ -145,12 +140,12 @@ export default {
         {
           name: 'Projects',
           href: '/#projects',
-          iconSet: ['fas', 'envelope']
+          iconSet: ['far', 'thumbs-up']
         },
         {
           name: 'Contact',
           href: '/#contact',
-          iconSet: ['far', 'thumbs-up']
+          iconSet: ['fas', 'envelope']
         }
       ]
     }
