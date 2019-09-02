@@ -121,7 +121,7 @@ export default {
         rgba(255, 255, 255, 55),
         rgba(255, 255, 255, 0)
       ),
-      url(../assets/images/codeforamerica3.jpg);
+      url(../assets/images/codeforamericabackground.jpg);
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
