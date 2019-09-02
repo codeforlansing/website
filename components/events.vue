@@ -3,7 +3,6 @@
     id="events"
     class="sm:-mt-48"
   >
-    <div class="lc-bg-right-triangle bg-transparent h-64"/>
     <div class="lc-bg-ltr-gradient">
       <div class="container mx-auto">
         <section-heading
