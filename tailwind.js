@@ -50,20 +50,20 @@ let colors = {
   black: '#22292f',
   'grey-darkest': '#3d4852',
   'grey-darker': '#606f7b',
-  'grey-dark': '#8795a1',
+  'grey-dark': '#3d4852',
   grey: '#b8c2cc',
   'grey-light': '#dae1e7',
   'grey-lighter': '#f1f5f8',
   'grey-lightest': '#f8fafc',
-  white: '#ffffff',
+  white: '#f8fafc',
 
-  'blue-darkest': '#12283a',
-  'blue-darker': '#1c3d5a',
-  'blue-dark': '#2779bd',
-  blue: '#3e79bb',
-  'blue-light': '#407cbf',
+  'blue-darkest': '#0C4D94',
+  'blue-darker': '#0C4D94',
+  'blue-dark': '#3c74b2',
+  blue: '#cd1f42',
+  'blue-light': '#3c74b2',
   'blue-lighter': '#bcdefa',
-  'blue-lightest': '#eff8ff'
+  'blue-lightest': '#fcf56f'
 }
 
 module.exports = {

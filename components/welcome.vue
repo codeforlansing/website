@@ -21,8 +21,8 @@
         </p>
         <img
           class="h-32 w-32"
-          src="/Users/charlaburnett/Documents/codeforlansing/website/assets/images/Brigade logo_Final_v1.jpg"
-          alt="Lansing Codes Logo"
+          src="assets/images/Brigade logo_Final_v1.jpg"
+          alt="Code for Lansing Logo"
         >
       </section>
 
@@ -34,7 +34,7 @@
       >
         <section-heading
           white
-          heading="Next Event"
+          heading="Our Events"
         />
         <div
           v-if="nextEvent"

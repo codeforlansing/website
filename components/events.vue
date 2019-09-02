@@ -38,7 +38,7 @@ export default {
 
 <style lang="scss" scoped>
 .lc-bg-ltr-gradient {
-  background: linear-gradient(to right, #2979bf, #005198);
+  background: linear-gradient(to right, #0059a1, #1e1548);
 }
 
 .lc-bg-right-triangle {
