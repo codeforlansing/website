@@ -16,7 +16,7 @@
       <img
         src="../assets/images/sponsors-feature.jpg"
         alt="Each week, programers, project managers, and tech junkies come together with civic leaders to work on a specific project that helps the Lansing community."
-        class="ml-8 mb-8 block shadow-lg"
+        class="ml-8 mb-8 block shadow-lg rounded-lg"
       >
 
     </div>

@@ -7,7 +7,7 @@
       <section
         class="
           flex-none w-full sm:w-1/2 sm:max-w-sm overflow-hidden sm:shadow-lg
-          bg-white text-center p-8 sm:mb-24
+          bg-white text-center p-8 sm:mb-24 rounded-lg
         "
       >
         <section-heading
@@ -29,7 +29,7 @@
       <section
         class="
           hidden sm:block sm:w-1/2 max-w-sm overflow-hidden shadow-lg
-          bg-blue-dark text-white p-8 sm:mt-24 sm:-ml-4
+          bg-blue-dark text-white p-8 sm:mt-24 sm:-ml-4 rounded-lg
         "
       >
         <section-heading
