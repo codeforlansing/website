@@ -803,7 +803,7 @@ module.exports = {
     backgroundSize: [],
     borderCollapse: [],
     borderColors: ['hover', 'focus'],
-    borderRadius: [],
+    borderRadius: ['responsive'],
     borderStyle: [],
     borderWidths: [],
     cursor: [],
