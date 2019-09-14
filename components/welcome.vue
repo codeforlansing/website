@@ -17,7 +17,12 @@
           subheading="A Code for America Initiative"
         />
         <p class="mt-0 mb-4">
-          Check out our Weekly Hack Nights, Team Leadership Meetings, and Hackathons
+          We use tech volunteerism to to solve problems that local nonprofits
+          and civic organizations are experiencing.
+        </p>
+        <p class="mt-0 mb-4">
+          Our solutions are open source and can benefit other communities as
+          well!
         </p>
         <img
           class="h-32 w-32"
@@ -37,39 +42,26 @@
           heading="Our Events"
         />
         <div
-          v-if="nextEvent"
           class="text-left font-normal"
         >
-          <div class="flex flex-no-wrap items-center mb-2 min-h-12">
+          <div class="flex flex-no-wrap items-center justify-center mb-2">
             <logo
-              v-if="groupForNextEvent"
-              :icon-set="groupForNextEvent.iconSet"
-              :icon-name="groupForNextEvent.iconName"
-              :icon-text="groupForNextEvent.iconText"
+              icon-set="fab"
+              icon-name="meetup"
               class="mr-3"
             />
             <h3 class="font-bold">
-              {{ nextEvent.name }}
+              Weekly Hack Nights, Leadership Meetings, and Hackathons
             </h3>
           </div>
-          <p class="flex flex-wrap justify-between text-sm mb-4 mt-0">
-            <span class="mb-1 mr-2">
-              {{ formatReadableDateTime(nextEvent.startTime) }}
-            </span>
-            <span
-              v-if="nextEvent.venue"
-            >
-              {{ nextEvent.venue }}
-            </span>
-          </p>
-          <div
-            class="lc-event-description mb-6"
-            v-html="nextEvent.description"
-          />
+          <div class="mb-6">
+            All of our events are scheduled on Meetup. Get notified
+            about all of our upcoming events when you join the group!
+          </div>
         </div>
         <div class="text-center">
           <a
-            :href="nextEvent.url"
+            :href="urls.meetup"
             class="
               inline-block bg-white no-underline
               text-blue-dark font-bold uppercase text-center py-4 mt-2 px-8
@@ -78,7 +70,7 @@
             target="_blank"
             rel="noreferrer noopener"
           >
-            Learn More and RSVP
+            Join us on Meetup
           </a>
         </div>
       </section>
@@ -93,11 +85,17 @@ import logo from '~/components/logo--small'
 import truncate from '~/utils/truncate'
 import groupForEvent from '~/utils/group-for-event'
 import formatReadableDateTime from '~/utils/format-readable-date-time'
+import urls from '~/config/urls.json'
 
 export default {
   components: {
     logo,
     sectionHeading
+  },
+  data() {
+    return {
+      urls
+    }
   },
   computed: {
     nextEvent() {
@@ -125,12 +123,6 @@ export default {
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
-  }
-}
-
-.lc-event-description {
-  a {
-    @apply .text-white .underline;
   }
 }
 </style>
