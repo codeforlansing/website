@@ -21,8 +21,8 @@
           and civic organizations are experiencing.
         </p>
         <p class="mt-0 mb-4">
-          Our solutions are open source and can benefit other communities as
-          well!
+          Our solutions are open source and can be used to help organizations
+          in other communities as well!
         </p>
         <img
           class="h-32 w-32"
@@ -34,7 +34,7 @@
       <section
         class="
           hidden sm:block sm:w-1/2 max-w-sm overflow-hidden shadow-lg
-          bg-blue-dark text-white p-8 sm:mt-24 sm:-ml-4 rounded-lg
+          bg-blue-dark text-white p-8 sm:mt-24 sm:-ml-4 rounded-lg self-end
         "
       >
         <section-heading
@@ -44,22 +44,25 @@
         <div
           class="text-left font-normal"
         >
-          <div class="flex flex-no-wrap items-center justify-center mb-2">
-            <logo
-              icon-set="fab"
-              icon-name="meetup"
-              class="mr-3"
+          <div class="flex flex-no-wrap items-center justify-center mb-4">
+            <font-awesome-icon
+              :icon="['fab', 'meetup']"
+              class="text-5xl h-20 mr-3"
             />
             <h3 class="font-bold">
               Weekly Hack Nights, Leadership Meetings, and Hackathons
             </h3>
           </div>
           <div class="mb-6">
-            All of our events are scheduled on Meetup. Get notified
-            about all of our upcoming events when you join the group!
+            All of our events are scheduled on Meetup. Get notified about all of
+            our upcoming events when you join the group.
+          </div>
+          <div class="mb-6">
+            If you're curious about an event, you're also welcome to stop in and
+            say hi.
           </div>
         </div>
-        <div class="text-center">
+        <div class="text-center p-2">
           <a
             :href="urls.meetup"
             class="
@@ -70,7 +73,7 @@
             target="_blank"
             rel="noreferrer noopener"
           >
-            Join us on Meetup
+            Join us on Meetup!
           </a>
         </div>
       </section>
@@ -79,12 +82,7 @@
 </template>
 
 <script>
-import { format } from 'date-fns'
 import sectionHeading from '~/components/section-heading'
-import logo from '~/components/logo--small'
-import truncate from '~/utils/truncate'
-import groupForEvent from '~/utils/group-for-event'
-import formatReadableDateTime from '~/utils/format-readable-date-time'
 import urls from '~/config/urls.json'
 
 export default {
@@ -96,17 +94,6 @@ export default {
     return {
       urls
     }
-  },
-  computed: {
-    nextEvent() {
-      return this.$store.state.events.upcoming[0]
-    },
-    groupForNextEvent() {
-      return groupForEvent(this.nextEvent, this.$store.state.groups.all)
-    }
-  },
-  methods: {
-    formatReadableDateTime
   }
 }
 </script>
