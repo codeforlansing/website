@@ -7,7 +7,7 @@
     "
   >
     <section-heading
-      blue
+      red
       heading="Our Sponsors"
       subheading="Our sponsors provide funding, event space, software, and other resources for our members and projects"
       class="md:mb-16 self-end w-full md:w-1/3"

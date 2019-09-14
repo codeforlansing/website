@@ -9,7 +9,7 @@
       rel="noreferrer noopener"
       target="_blank"
       class="
-        no-underline text-blue hover:text-blue-darker focus:text-blue-darker
+        no-underline text-red hover:text-blue-dark focus:text-blue-dark
       "
     >
       <logo
@@ -25,10 +25,10 @@
     </a>
     <p
       v-if="subheading.length"
-      class="text-lg text-grey-darker mb-3"
+      class="text-lg text-grey-dark mb-3"
     >{{ subheading }}</p>
     <figcaption
-      class="text-grey-darker text-base"
+      class="text-grey-dark text-base"
       v-html="description"
     />
   </figure>

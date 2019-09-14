@@ -6,9 +6,9 @@
     "
   >
     <section-heading
-      blue
+      red
       heading="Our Members"
-      subheading="Are you a programmer, project manager or tech junkie? We need you!"
+      subheading="Are you a programmer, project manager, or tech junkie? We need you!"
       class="w-full lg:w-1/2 self-center"/>
   </section>
 </template>

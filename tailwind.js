@@ -47,23 +47,22 @@ let colors = {
 
   attention: '#ff7f50',
 
+  // Color and naming conventions below are derived from the Code for America
+  // style guide: http://style.codeforamerica.org
+
   black: '#22292f',
-  'grey-darkest': '#3d4852',
-  'grey-darker': '#606f7b',
-  'grey-dark': '#3d4852',
-  grey: '#b8c2cc',
-  'grey-light': '#dae1e7',
-  'grey-lighter': '#f1f5f8',
-  'grey-lightest': '#f8fafc',
+  'grey-dark': '#444444',
+  grey: '#6D6E71',
+  'grey-light': '#e5e5e5',
   white: '#ffffff',
 
-  'blue-darkest': '#0C4D94',
-  'blue-darker': '#0C4D94',
-  'blue-dark': '#3c74b2',
-  blue: '#cd1f42',
-  'blue-light': '#3c74b2',
-  'blue-lighter': '#bcdefa',
-  'blue-lightest': '#fcf56f'
+  'blue-dark': '#0d77ac',
+  'blue-medium': '#4298bb',
+  blue: '#399fd3',
+  'blue-light': '#7ab5d6',
+
+  'red-medium': '#aa1c3a',
+  red: '#cf1b41'
 }
 
 module.exports = {

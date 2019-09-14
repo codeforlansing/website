@@ -6,7 +6,7 @@
     "
   >
     <section-heading
-      blue
+      red
       heading="Free Meetups"
       subheading="regular meetups to help you become a better coder"
       class="w-full lg:w-1/2 self-center"/>

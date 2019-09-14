@@ -24,7 +24,7 @@
       >
         <font-awesome-icon
           :icon="[link.iconSet, link.icon]"
-          class="text-5xl text-blue fill-current hover:text-blue-lighter"
+          class="text-5xl text-red fill-current hover:text-red-medium"
         />
       </a>
     </nav>

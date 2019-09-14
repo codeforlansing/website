@@ -28,7 +28,7 @@
           :key="resource.title"
           class="font-serif w-full max-w-sm px-4 my-6 md:w-1/2"
         >
-          <h3 class="text-2xl font-sans font-normal text-blue mb-2">
+          <h3 class="text-2xl font-sans font-normal text-red mb-2">
             <a
               :href="resource.url"
               target="_blank"
@@ -66,7 +66,7 @@ export default {
 
 <style lang="scss" scoped>
 .lc-bg-rtl-gradient {
-  background: linear-gradient(to left, #cd1f42, #cd1f42);
+  background: linear-gradient(to left, #0d77ac, #0d77ac);
 }
 
 .lc-bg-downright-trapezoid {

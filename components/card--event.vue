@@ -8,7 +8,7 @@
     <!-- Header (always visible) -->
     <header
       class="
-        overflow-hidden relative bg-blue-darker text-white p-4 shadow
+        overflow-hidden relative bg-blue-dark text-white p-4 shadow
       "
     >
       <div
@@ -47,8 +47,8 @@
         <button
           :aria-label="open ? 'Hide details' : 'Show details'"
           class="
-            in-triangle text-blue font-bold
-            hover:text-blue-darkest focus:text-blue-darkest focus:outline-none
+            in-triangle text-red font-bold
+            hover:text-blue-dark focus:text-blue-dark focus:outline-none
           "
           type="button"
         >
@@ -78,7 +78,7 @@
             <p class="font-bold mb-1">{{ venue }}</p>
             <address
               v-if="address"
-              class="text-grey-darker roman"
+              class="text-grey-dark roman"
             >{{ address }}</address>
           </div>
           <div

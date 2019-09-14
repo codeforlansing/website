@@ -7,7 +7,7 @@
     "
   >
     <section-heading
-      blue
+      red
       heading="Our Projects"
       subheading="Each week, programers, project managers, and tech junkies come together with civic leaders to work on a specific project that helps the Lansing community."
       class="md:mb-16 self-end w-full md:w-1/3"

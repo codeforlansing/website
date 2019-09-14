@@ -18,12 +18,12 @@
         :class="{
           'border-4': isToday(day),
           'bg-white': isWeekday(day) || isToday(day),
-          'bg-blue-lighter': !isWeekday(day) && !isToday(day)
+          'bg-blue-light': !isWeekday(day) && !isToday(day)
         }"
         class="w-1/7 min-h-16 m-1 p-1 rounded-sm border-attention shadow-md"
       >
         <div>
-          <div class="text-grey-darkest text-center mb-2 font-medium">
+          <div class="text-grey-dark text-center mb-2 font-medium">
             {{ formatDayOfMonth(day) }}
           </div>
           <ul
@@ -37,13 +37,13 @@
               v-for="event in eventsOnDay(day)"
               :key="event.id"
               class="
-                block list-none mx-1 py-2 border-t border-blue
-                hover:bg-blue-lightest
+                block list-none mx-1 py-2 border-t border-red
+                hover:bg-blue-light
               "
             >
               <a
                 :href="event.url"
-                class="w-full block no-underline text-blue-darker"
+                class="w-full block no-underline text-blue-dark"
                 target="_blank"
                 rel="noreferrer noopener"
               >
@@ -70,7 +70,7 @@
                   :width="225"
                   event="hover"
                   class="
-                    text-blue-darker border border-blue shadow-md -mt-2 hidden
+                    text-blue-dark border border-red shadow-md -mt-2 hidden
                   "
                 >
                   <div>{{ event.name }}</div>

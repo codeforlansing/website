@@ -12,7 +12,7 @@
       >
         <section-heading
           h1
-          blue
+          red
           heading="Code for Lansing"
           subheading="A Code for America Initiative"
         />
@@ -28,8 +28,8 @@
 
       <section
         class="
-          hidden sm:block sm:w-1/2 max-w-sm overflow-hidden shadow-lg bg-blue-dark
-          text-white p-8 sm:mt-24 sm:-ml-4
+          hidden sm:block sm:w-1/2 max-w-sm overflow-hidden shadow-lg
+          bg-blue-dark text-white p-8 sm:mt-24 sm:-ml-4
         "
       >
         <section-heading
@@ -72,8 +72,8 @@
             :href="nextEvent.url"
             class="
               inline-block bg-white no-underline
-              text-blue font-bold uppercase text-center py-4 mt-2 px-8
-              min-w-24 rounded-full
+              text-red font-bold uppercase text-center py-4 mt-2 px-8
+              min-w-24 rounded-full hover:text-red-medium
             "
             target="_blank"
             rel="noreferrer noopener"

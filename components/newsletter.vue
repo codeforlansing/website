@@ -1,7 +1,7 @@
 <template>
   <section
     id="newsletter"
-    class="bg-blue px-4 py-20"
+    class="bg-blue-dark px-4 py-20"
   >
     <section-heading
       white
@@ -29,9 +29,9 @@
         >
         <button
           class="
-            outline-none bg-white border border-blue rounded-full
-            text-blue p-4 -ml-16 uppercase font-bold text-sm
-            hover:text-blue-darker focus:outline-none focus:shadow-outline
+            outline-none bg-white border border-red rounded-full
+            text-red p-4 -ml-16 uppercase font-bold text-sm
+            hover:text-red-medium focus:outline-none focus:shadow-outline
           "
           type="submit"
         >Subscribe</button>
@@ -42,7 +42,7 @@
       >
         <div class="up-arrow mt-1 ml-4"/>
         <div
-          class="bg-blue-lightest text-blue-dark font-bold px-4 py-3 mx-auto"
+          class="bg-blue-light text-blue-dark font-bold px-4 py-3 mx-auto"
           role="alert"
         >
           <p
@@ -58,7 +58,7 @@
     >
       <div
         class="
-          bg-blue-lightest text-blue-dark text-center font-bold px-4 py-3
+          bg-blue-light text-blue-dark text-center font-bold px-4 py-3
           mx-auto
         "
         role="alert"
@@ -116,15 +116,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-section {
-  background-image: url(../assets/images/bg/stay-informed.svg);
-  background-position: center top;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 .up-arrow {
-  border-color: config('colors.blue-lightest') transparent;
+  border-color: config('colors.blue-light') transparent;
   border-style: solid;
   border-width: 0px 10px 10px;
   height: 0px;

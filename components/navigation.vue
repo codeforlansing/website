@@ -3,7 +3,7 @@
     <div
       class="
         hidden lg:flex items-center justify-between flex-wrap
-        bg-white p-4 border-b border-blue-light
+        bg-white p-4 border-b border-blue-medium
       "
     >
       <!-- Logo -->
@@ -43,7 +43,7 @@
         :aria-label="open ? 'Close Menu' : 'Open Menu'"
         class="
           block p-4 rounded-full shadow-lg leading-normal
-          bg-white text-blue border-blue border-2 font-medium
+          bg-white text-red border-red border-2 font-medium
           hover:slide-up-px active:shadow-none active:slide-down-px
           focus:outline-none
         "
@@ -54,7 +54,7 @@
         <font-awesome-icon
           :icon="['fas', open ? 'times' : 'th']"
           fixed-width
-          class="text-xl text-blue align-middle"
+          class="text-xl text-red align-middle"
         />
       </button>
     </div>
@@ -71,7 +71,7 @@
         key="menu"
         class="
           static block lg:hidden fixed pin-b pin-x z-30 p-4 pb-0
-          border-blue border-t-2 bg-white font-medium
+          border-red border-t-2 bg-white font-medium
         "
       >
         <div>

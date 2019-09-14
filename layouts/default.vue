@@ -33,13 +33,15 @@ body {
 
 a {
   @apply .text-blue-dark;
+  transition: all 0.3s ease-in-out;
 
   &:hover {
-    @apply .text-blue-darker;
+    @apply .text-blue-dark;
+    transform: scale(1.2);
   }
 
   &:focus {
-    @apply .text-blue-darker .bg-blue-lighter .outline-none;
+    @apply .text-blue-dark .outline-none;
   }
 }
 
