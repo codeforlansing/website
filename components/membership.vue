@@ -1,6 +1,6 @@
 <template>
   <section
-    id="meetups"
+    id="membership"
     class="
       container mx-auto flex flex-wrap justify-start px-4 md:px-12 mb-16 sm:mb-0
     "
@@ -15,8 +15,6 @@
 
 <script>
 import sectionHeading from '~/components/section-heading'
-import card from '~/components/card--figure'
-import orderBy from 'lodash/orderBy'
 
 export default {
   components: {

@@ -29,9 +29,9 @@
         >
         <button
           class="
-            outline-none bg-white border border-red rounded-full
-            text-red p-4 -ml-16 uppercase font-bold text-sm
-            hover:text-red-medium focus:outline-none focus:shadow-outline
+            outline-none bg-white border border-blue-dark rounded-full
+            text-blue-dark p-4 -ml-16 uppercase font-bold text-sm
+            hover:text-blue-dark focus:outline-none focus:shadow-outline
           "
           type="submit"
         >Subscribe</button>

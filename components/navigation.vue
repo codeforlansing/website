@@ -8,11 +8,7 @@
     >
       <!-- Logo -->
       <div class="flex items-center flex-no-shrink text-blue-dark">
-        <img
-          class="h-12 mr-2"
-          src="../assets/images/codeforlansing-icon.png"
-          alt="Code for Lansing Logo"
-        >
+        <span class="text-4xl mr-4 fa icon-code-for-lansing"/>
         <span class="font-bold text-xl uppercase">Code for Lansing</span>
       </div>
 
@@ -71,7 +67,7 @@
         key="menu"
         class="
           static block lg:hidden fixed pin-b pin-x z-30 p-4 pb-0
-          border-red border-t-2 bg-white font-medium
+          border-white border-t-2 bg-red-medium font-medium
         "
       >
         <div>
@@ -81,6 +77,7 @@
                 href="/#welcome"
                 class="
                   inline-block no-underline uppercase mb-4 leading-tight
+                  text-white hover:text-white
                 "
                 @click="open = false"
               >
@@ -101,6 +98,7 @@
                 :href="link.href"
                 class="
                   inline-block no-underline uppercase mb-4 leading-tight
+                  text-white hover:text-white
                 "
                 @click="open = false"
               >

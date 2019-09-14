@@ -50,21 +50,21 @@ export default {
         },
         {
           name: 'GitHub',
-          href: 'https://github.com/codeforlansing',
+          href: urls.github,
           iconSet: 'fab',
           icon: 'github'
         },
         {
-          name: 'MeetUp',
-          href: 'https://www.meetup.com/Code-for-Lansing/',
-          iconSet: 'fab',
-          icon: 'meetup'
-        },
-        {
           name: 'Facebook',
-          href: 'https://www.facebook.com/code4lansing',
+          href: urls.facebook,
           iconSet: 'fab',
           icon: 'facebook'
+        },
+        {
+          name: 'Meetup',
+          href: urls.meetup,
+          iconSet: 'fab',
+          icon: 'meetup'
         }
       ]
     }

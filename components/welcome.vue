@@ -72,8 +72,8 @@
             :href="nextEvent.url"
             class="
               inline-block bg-white no-underline
-              text-red font-bold uppercase text-center py-4 mt-2 px-8
-              min-w-24 rounded-full hover:text-red-medium
+              text-blue-dark font-bold uppercase text-center py-4 mt-2 px-8
+              min-w-24 rounded-full hover:text-blue-dark
             "
             target="_blank"
             rel="noreferrer noopener"
