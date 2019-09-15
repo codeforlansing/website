@@ -126,19 +126,19 @@ export default {
       open: false,
       links: [
         {
-          name: 'Slack',
-          href: urls.slack,
-          iconSet: ['fab', 'slack']
-        },
-        {
           name: 'Membership',
           href: '/#membership',
-          iconSet: ['fas', 'school']
+          iconSet: ['fas', 'users']
         },
         {
           name: 'Projects',
           href: '/#projects',
-          iconSet: ['far', 'thumbs-up']
+          iconSet: ['fas', 'project-diagram']
+        },
+        {
+          name: 'Slack',
+          href: urls.slack,
+          iconSet: ['fab', 'slack']
         },
         {
           name: 'Contact',

@@ -42,6 +42,7 @@ import {
   faMinus,
   faMoon,
   faPlus,
+  faProjectDiagram,
   faSchool,
   faServer,
   faTable,
@@ -67,6 +68,7 @@ library.add(
   faMinus,
   faMoon,
   faPlus,
+  faProjectDiagram,
   faSchool,
   faServer,
   faTable,
@@ -81,29 +83,13 @@ library.add(
 // https://fontawesome.com/icons?d=gallery&s=brands&m=free
 import {
   faFacebook,
-  faFreeCodeCamp,
   faGithub,
-  faHtml5,
-  faJava,
-  faJsSquare,
   faSlack,
   faTwitter,
-  faWordpressSimple,
   faMeetup
 } from '@fortawesome/free-brands-svg-icons'
 
-library.add(
-  faFacebook,
-  faFreeCodeCamp,
-  faGithub,
-  faHtml5,
-  faJava,
-  faJsSquare,
-  faSlack,
-  faTwitter,
-  faWordpressSimple,
-  faMeetup
-)
+library.add(faFacebook, faGithub, faSlack, faTwitter, faMeetup)
 
 /**************************************************************************
   👉  To use font awesome icons in components, once they are registered here:
