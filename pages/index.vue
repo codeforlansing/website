@@ -22,14 +22,6 @@ export default {
     resources,
     projects,
     newsletter
-  },
-  async fetch({ store }) {
-    // Load async data needed by the page here
-    return Promise.all([
-      store.dispatch('sponsors/loadAll'),
-      store.dispatch('groups/loadAll'),
-      store.dispatch('events/loadUpcoming')
-    ])
   }
 }
 </script>

@@ -1,25 +1,8 @@
-const pkg = require('./package')
-
 const join = require('path').join
 const tailwindJS = join(__dirname, 'tailwind.js')
 
 module.exports = {
   mode: 'spa',
-
-  env: {
-    // access with process.env.firebaseWebConfig
-    firebaseWebConfig: process.env.FIREBASE_WEB_CONFIG
-      ? JSON.parse(process.env.FIREBASE_WEB_CONFIG)
-      : {
-          apiKey: 'AIzaSyCMw8mZ1D1GAYpeotAqVCaYAMtn3URVOok',
-          authDomain: 'lansing-codes.firebaseapp.com',
-          databaseURL: 'https://lansing-codes.firebaseio.com',
-          projectId: 'lansing-codes',
-          storageBucket: 'lansing-codes.appspot.com',
-          messagingSenderId: '647280182517',
-          appId: '1:647280182517:web:779f72d0b90c0dd4'
-        }
-  },
 
   /*
   ** Headers of the page
@@ -123,7 +106,7 @@ module.exports = {
   /*
   ** Nuxt.js modules
   */
-  modules: ['@nuxtjs/axios', '@nuxtjs/google-analytics'],
+  modules: ['@nuxtjs/google-analytics'],
 
   /*
   ** Build configuration

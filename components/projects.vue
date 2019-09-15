@@ -26,17 +26,11 @@
 <script>
 import sectionHeading from '~/components/section-heading'
 import card from '~/components/card--figure'
-import orderBy from 'lodash/orderBy'
 
 export default {
   components: {
     card,
     sectionHeading
-  },
-  computed: {
-    sponsors() {
-      return orderBy(this.$store.state.sponsors.all, ['name'])
-    }
   }
 }
 </script>
