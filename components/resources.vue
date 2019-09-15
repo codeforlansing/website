@@ -8,8 +8,8 @@
       >
         <section-heading
           white
-          heading="Beginner Resources"
-          subheading="where to start if you're new to coding"
+          heading="Learn More"
+          subheading="discover the bigger communities we're a part of"
           class="
             w-full py-16 mb-0 mt-10 mx-auto sm:mx-0 bg-blue-dark
             sm:w-1/2 md:w-2/5 sm:py-6 sm:rounded-lg sm:shadow-md sm:bg-blue-darker
@@ -44,7 +44,7 @@
         </div>
       </div>
     </div>
-    <div class="hidden sm:block bg-white h-32"/>
+    <div class="hidden md:block bg-white h-32"/>
   </section>
 </template>
 

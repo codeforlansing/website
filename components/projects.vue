@@ -3,7 +3,7 @@
     id="projects"
     class="
       container mx-auto flex flex-wrap justify-center px-4 my-16
-      md:px-12 md:-mt-48
+      md:px-12 md:-mt-40
     "
   >
     <section-heading

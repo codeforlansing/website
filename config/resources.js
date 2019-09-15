@@ -1,21 +1,21 @@
 export default [
   {
-    title: 'Code Lab 517',
-    url: 'https://www.codelab517.com',
+    title: 'Code for America',
+    url: 'https://www.codeforamerica.org',
     desc: `
-      Use professional tools and processes to learn HTML, CSS, JavaScript, and
-      more. Get help from local mentors. No prior experience required.
-      Visit the website to find out when the next lab will be and to apply.
+      Code for Lansing is only a small piece of a bigger whole. If you want to
+      learn how people in tech are doing good within the government and in
+      communities all throughout the country, visit Code for America.
     `
   },
   {
-    title: 'freeCodeCamp',
-    url: 'https://www.facebook.com/groups/free.code.camp.lansing/',
+    title: 'Lansing Codes',
+    url: 'https://www.lansing.codes',
     desc: `
-      A community that works to help people learn to code and gain experience
-      contributing to open source projects used by non-profits. Learn to code
-      by completing coding challenges and building projects. freeCodeCamp is a
-      donor supported non-profit and every aspect is 100% free.
+      Find tech events related to your interests, stay current on your skills,
+      and share what you're doing in tech with other Lansing residents. There
+      are nearly two dozen free tech groups in Lansing and lots of businesses
+      supporting them. Explore them all at Lansing Codes.
     `
   }
 ]
