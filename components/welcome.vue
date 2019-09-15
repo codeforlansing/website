@@ -22,7 +22,7 @@
         </p>
         <p class="mt-0 mb-4">
           Our solutions are open source and can be used to help organizations
-          in other communities as well!
+          in other communities as well.
         </p>
         <img
           class="h-32 w-32"
