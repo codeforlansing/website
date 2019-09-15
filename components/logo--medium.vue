@@ -15,11 +15,6 @@
       class="font-bold font-sans inline-block text-5xl h-24 pt-5"
     >{{ iconText }}</span>
     <span
-      v-else-if="iconSet === 'mfizz'"
-      :class="iconName"
-      class="text-6xl h-24 fa fa-3x pt-6"
-    />
-    <span
       v-else-if="iconSet === 'lansing-codes'"
       :class="iconName"
       class="text-6xl h-24 fa fa-4x pt-3"

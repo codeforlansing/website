@@ -24,11 +24,9 @@
     "i": "^0.3.6",
     "npm": "^6.11.2",
     "nuxt": "^2.9.2",
-    "vue-js-popover": "^1.1.8",
     "vue-jsonp": "^0.1.8"
   },
   "devDependencies": {
-    "@nuxtjs/google-analytics": "^2.2.0",
     "autoprefixer": "^8.6.4",
     "babel-eslint": "^8.2.1",
     "eslint": "^5.0.1",

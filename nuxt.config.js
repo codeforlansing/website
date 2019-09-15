@@ -11,68 +11,42 @@ module.exports = {
     htmlAttrs: {
       lang: 'en-US'
     },
-    title: 'Lansing Codes',
+    title: 'Code for Lansing',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       {
         hid: 'description',
         name: 'description',
-        content: 'Resources for coders and community organizers of Lansing, MI.'
+        content:
+          'Our volunteers make open sourced software solutions for Lansing nonprofits and civic groups.'
       },
       {
         property: 'og:description',
-        content: 'Resources for coders and community organizers of Lansing, MI.'
+        content:
+          'Our volunteers make open sourced software solutions for Lansing nonprofits and civic groups.'
       },
-      { property: 'og:title', content: 'Lansing Codes' },
-      {
-        name: 'keywords',
-        content: [
-          'lansing mi',
-          'lansing codes',
-          'meetups',
-          'events',
-          'code',
-          'coding',
-          'programming',
-          'hackathon',
-          'learning to code',
-          'coding resources',
-          'programming resources',
-          'learn to code'
-        ].join(',')
-      },
+      { property: 'og:title', content: 'Code for Lansing' },
       { name: 'geo.region', content: 'US-MI' },
       { name: 'geo.placename', content: 'Greater Lansing' },
       { name: 'geo.position', content: '42.734552;-84.480615' },
       { name: 'ICBM', content: '42.734552, -84.480615' },
       { property: 'og:type', content: 'website' },
-      { property: 'og:url', content: 'https://www.lansing.codes/' },
+      { property: 'og:url', content: 'https://codeforlansing.org' },
       { property: 'og:locale', content: 'en_US' },
-      { property: 'og:site_name', content: 'Lansing Codes' },
+      { property: 'og:site_name', content: 'Code for Lansing' },
       {
         property: 'og:image',
-        content: 'https://www.lansing.codes/resources-for-lansing-coders.jpg'
+        content: 'https://codeforlansing.org/codeforlansing-banner.jpg'
       },
       { property: 'og:image:type', content: 'image/jpeg' },
-      { property: 'og:image:width', content: '2850' },
-      { property: 'og:image:height', content: '1420' },
-      { property: 'fb:admins', content: '2327791' },
-      { property: 'fb:admins', content: '2335756' },
-      { property: 'fb:admins', content: '1261535380' },
-      { name: 'twitter:card', content: 'summary_large_image' },
-      { name: 'twitter:site', content: '@lansingcodes' },
-      { name: 'twitter:creator', content: '@lansingcodes' }
+      { property: 'og:image:width', content: '640' },
+      { property: 'og:image:height', content: '320' }
     ],
     link: [
-      { rel: 'apple-touch-icon', type: 'image/png', href: '/favicon.ico?v=1' },
-      { rel: 'image_src', type: 'image/png', href: '/favicon.ico?v=1' },
-      { rel: 'icon', type: 'image/png', href: '/favicon.ico?v=1' },
-      {
-        rel: 'stylesheet',
-        href:
-          'https://cdnjs.cloudflare.com/ajax/libs/font-mfizz/2.4.1/font-mfizz.min.css'
-      },
+      { rel: 'apple-touch-icon', type: 'image/png', href: '/favicon.ico?v=2' },
+      { rel: 'image_src', type: 'image/png', href: '/favicon.ico?v=2' },
+      { rel: 'icon', type: 'image/png', href: '/favicon.ico?v=2' },
       {
         rel: 'stylesheet',
         href:
@@ -97,16 +71,12 @@ module.exports = {
   /*
   ** Plugins to load before mounting the App
   */
-  plugins: [
-    { src: '~/plugins/font-awesome' },
-    { src: '~/plugins/jsonp' },
-    { src: '~/plugins/popover', ssr: false }
-  ],
+  plugins: [{ src: '~/plugins/font-awesome' }, { src: '~/plugins/jsonp' }],
 
   /*
   ** Nuxt.js modules
   */
-  modules: ['@nuxtjs/google-analytics'],
+  modules: [],
 
   /*
   ** Build configuration
@@ -153,12 +123,5 @@ module.exports = {
         }
       }
     }
-  },
-
-  /*
-  ** Module configuration
-  */
-  'google-analytics': {
-    id: 'UA-73509402-2'
   }
 }
