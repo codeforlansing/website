@@ -56,6 +56,7 @@ let colors = {
   'grey-light': '#e5e5e5',
   white: '#ffffff',
 
+  'blue-darker': '#0b6794',
   'blue-dark': '#0d77ac',
   'blue-medium': '#4298bb',
   blue: '#399fd3',
@@ -797,7 +798,7 @@ module.exports = {
   modules: {
     appearance: [],
     backgroundAttachment: [],
-    backgroundColors: ['hover', 'focus'],
+    backgroundColors: ['responsive', 'hover', 'focus'],
     backgroundPosition: [],
     backgroundRepeat: [],
     backgroundSize: [],
@@ -828,7 +829,7 @@ module.exports = {
     pointerEvents: [],
     position: [],
     resize: [],
-    shadows: ['active', 'hover', 'focus'],
+    shadows: ['responsive', 'active', 'hover', 'focus'],
     svgFill: [],
     svgStroke: [],
     textAlign: [],

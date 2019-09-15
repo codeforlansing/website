@@ -38,7 +38,7 @@
       <button
         :aria-label="open ? 'Close Menu' : 'Open Menu'"
         class="
-          block p-4 rounded-full shadow-lg leading-normal
+          block p-4 rounded-full shadow-md leading-normal
           bg-white text-red border-red border-2 font-medium
           hover:slide-up-px active:shadow-none active:slide-down-px
           focus:outline-none

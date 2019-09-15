@@ -1,26 +1,26 @@
 <template>
   <section id="resources">
-    <div
-      class="
-        lc-bg-rtl-gradient sm:lc-bg-upright-trapezoid bg-white h-40
-      "
-    >
+    <div class="bg-white h-40">
       <div
-        class="container mx-auto flex sm:justify-end flex-no-wrap content-center"
+        class="
+          container mx-auto flex sm:justify-end flex-no-wrap content-center
+        "
       >
         <section-heading
           white
           heading="Beginner Resources"
           subheading="where to start if you're new to coding"
-          class="w-full sm:w-2/5 mb-0 mt-10 mx-auto sm:mx-0"
+          class="
+            w-full py-16 mb-0 mt-10 mx-auto sm:mx-0 bg-blue-dark
+            sm:w-1/2 md:w-2/5 sm:py-6 sm:rounded-lg sm:shadow-md sm:bg-blue-darker
+          "
         />
       </div>
     </div>
-    <div class="lc-bg-rtl-gradient">
+    <div class="bg-blue-dark">
       <div
         class="
-          container mx-auto flex flex-wrap content-center justify-around
-          pt-0 sm:pt-16 pb-16
+          container mx-auto flex flex-wrap content-center justify-around py-16
         "
       >
         <div
@@ -44,7 +44,7 @@
         </div>
       </div>
     </div>
-    <div class="hidden sm:block lc-bg-downright-trapezoid bg-white h-32"/>
+    <div class="hidden sm:block bg-white h-32"/>
   </section>
 </template>
 
@@ -63,25 +63,3 @@ export default {
   }
 }
 </script>
-
-<style lang="scss" scoped>
-.lc-bg-rtl-gradient {
-  background: linear-gradient(to left, #0d77ac, #0d77ac);
-}
-
-.lc-bg-downright-trapezoid {
-  background-color: #fff;
-  background-image: url(../assets/images/bg/downright-trapezoid.svg);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-}
-
-@media (min-width: 576px) {
-  .sm\:lc-bg-upright-trapezoid {
-    background-color: #fff;
-    background-image: url(../assets/images/bg/upright-trapezoid.svg);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-  }
-}
-</style>

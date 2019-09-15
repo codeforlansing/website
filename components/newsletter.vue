@@ -1,7 +1,7 @@
 <template>
   <section
     id="newsletter"
-    class="bg-blue-dark px-4 py-20"
+    class="bg-blue-dark px-4 py-16"
   >
     <section-heading
       white
@@ -11,6 +11,7 @@
     />
     <form
       v-if="!subscribed"
+      class="pb-2"
       novalidate
       @submit.prevent="subscribe"
     >
