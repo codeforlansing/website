@@ -807,7 +807,7 @@ module.exports = {
     borderColors: ['hover', 'focus'],
     borderRadius: ['responsive'],
     borderStyle: [],
-    borderWidths: [],
+    borderWidths: ['responsive'],
     cursor: [],
     display: ['responsive'],
     flexbox: ['responsive'],
