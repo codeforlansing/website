@@ -11,7 +11,7 @@
           heading="Learn More"
           subheading="Discover the bigger communities that we're a part of."
           class="
-            w-full py-16 mb-0 mt-10 mx-auto sm:mx-0 bg-blue-dark
+            w-full py-16 mb-0 sm:mt-10 mx-auto sm:mx-0 bg-blue-dark
             sm:w-1/2 md:w-2/5 sm:py-6 sm:rounded-lg sm:shadow-md sm:bg-blue-darker
           "
         />
