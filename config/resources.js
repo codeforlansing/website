@@ -14,8 +14,8 @@ export default [
     desc: `
       Find tech events related to your interests, stay current on your skills,
       and share what you're doing in tech with other Lansing residents. There
-      are nearly two dozen free tech groups in Lansing and lots of businesses
-      supporting them. Explore them all at Lansing Codes.
+      are nearly two dozen free tech groups in Lansing with lots of support
+      from local businesses. Find them all at Lansing Codes.
     `
   }
 ]

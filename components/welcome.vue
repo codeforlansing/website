@@ -14,7 +14,7 @@
           h1
           red
           heading="Code for Lansing"
-          subheading="a Code for America initiative"
+          subheading="A Code for America initiative."
         />
         <p class="mt-0 mb-4">
           We use tech volunteerism to to solve problems that local nonprofits

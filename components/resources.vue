@@ -9,7 +9,7 @@
         <section-heading
           white
           heading="Learn More"
-          subheading="discover the bigger communities we're a part of"
+          subheading="Discover the bigger communities that we're a part of."
           class="
             w-full py-16 mb-0 mt-10 mx-auto sm:mx-0 bg-blue-dark
             sm:w-1/2 md:w-2/5 sm:py-6 sm:rounded-lg sm:shadow-md sm:bg-blue-darker
@@ -26,9 +26,9 @@
         <div
           v-for="resource in resources"
           :key="resource.title"
-          class="font-serif w-full max-w-sm px-4 my-6 md:w-1/2"
+          class="w-full max-w-sm px-4 my-6 md:w-1/2"
         >
-          <h3 class="text-2xl font-sans font-normal text-red mb-2">
+          <h3 class="text-2xl font-normal text-red mb-2">
             <a
               :href="resource.url"
               target="_blank"
