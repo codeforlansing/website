@@ -8,8 +8,8 @@
   >
     <section-heading
       red
-      heading="Our Members"
-      subheading="Are you a programmer, project manager, or tech junkie? We need you!"
+      heading="How to Help"
+      subheading="Are you a programmer, project manager, or designer? We need you!"
       class="w-full lg:w-1/2 self-center"/>
   </section>
 </template>

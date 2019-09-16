@@ -20,7 +20,7 @@
       >
     </div>
     <div class="text-center">
-      <h3 class="mb-4 sm:mb-16">
+      <h3 class="text-red mb-4 sm:mb-16">
         Our pilot project starts on Wednesday, September 18th at 7:00 p.m.
       </h3>
       <a href="https://www.meetup.com/Code-for-Lansing/events/264222732/">
