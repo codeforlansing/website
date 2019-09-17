@@ -1,18 +1,21 @@
 <template>
-  <div class="slider relative w-full flex flex-col">
-    <div class="slider__wrapper">
+  <div class="relative w-full flex flex-col">
+    <div class="relative flex items-center">
       <div
         :style="{ left: position }"
-        class="slider__label"
+        class="
+          absolute pin-t border border-grey-light bold rounded-sm p-1
+          text-center text-sm -ml-1 -mt-10 shadow-md whitespace-no-wrap w-8
+        "
       >{{ sliderLabel }}</div>
-      <div class="slider__track slider__track--rectangular"/>
+      <div class="absolute w-full z-0 h-1 bg-grey rounded-sm"/>
       <input
         ref="slider"
         v-model="sliderValue"
         :min="sliderMin"
         :max="sliderMax"
         :step="step"
-        class="slider__input"
+        class="relative z-10 p-0 w-full mx-0 bg-transparent focus:outline-none"
         type="range"
         @input="update"
         @change="change"
@@ -28,11 +31,6 @@ export default {
       type: String,
       required: false,
       default: ''
-    },
-    values: {
-      type: Array,
-      required: false,
-      default: () => []
     },
     min: {
       type: String,
@@ -53,7 +51,6 @@ export default {
   data() {
     return {
       sliderWidth: 0,
-      sliderValues: [],
       sliderValue: null,
       sliderMax: null,
       sliderMin: null
@@ -61,50 +58,25 @@ export default {
   },
   computed: {
     sliderLabel() {
-      // If using custom values, the custom label is returned, otherwise the value is also the label
-      return this.sliderValues.length
-        ? this.sliderValues[this.sliderValue - 1].label
-        : this.sliderValue
+      return parseFloat(this.sliderValue).toFixed(1)
     },
     sliderOutputValue() {
-      // If using custom values, the custom value is returned, otherwise just the default value
-      return this.sliderValues.length
-        ? this.sliderValues[this.sliderValue - 1].value
-        : this.sliderValue
+      return this.sliderValue
     },
     position() {
       const val = this.sliderValue
-      // Measure width of slider element. Adjust by 20 to account for thumbsize
-      const width = this.sliderWidth - 20
+      // Adjust by 24 to account for thumbsize (.w-6 => 6 * 4 = 24px)
+      const width = this.sliderWidth - 24
       // Calculate percentage between left and right of input
       const percent = (val - this.sliderMin) / (this.sliderMax - this.sliderMin)
-      // Janky value to get pointer to line up better
-      const offset = -2
-      const position = width * percent + offset
+      const position = width * percent
       return `${position}px`
     }
   },
   created() {
-    // Set local values, depending on use of custom or default
-    if (this.values.length) {
-      this.sliderValues = this.values
-      this.sliderMin = '1'
-      this.sliderMax = this.sliderValues.length
-      // Find the corresponding custom value, and set the local sliderValue
-      let index = 0
-      this.values.map((item, i) => {
-        if (item.value === this.value) {
-          index = i
-        }
-        return true
-      })
-      this.sliderValue = index + 1
-    } else {
-      // In case of using default slider methods
-      this.sliderMin = this.min
-      this.sliderMax = this.max
-      this.sliderValue = this.value
-    }
+    this.sliderMin = this.min
+    this.sliderMax = this.max
+    this.sliderValue = this.value
   },
   mounted() {
     this.$nextTick(() => {
@@ -123,148 +95,64 @@ export default {
 </script>
 
 <style lang="scss">
-$label-color: #333 !default;
-$label-background: white !default;
-$label-shadow: 0 10px 20px -5px rgba(45, 45, 45, 0.25);
+input {
+  -webkit-appearance: none;
 
-$slider-track-background: #999 !default;
-$slider-track-height: 3px !default;
-
-$thumb-background: #eee !default;
-$thumb-size: 20px;
-
-.slider {
-  &__label {
-    position: absolute;
-    top: -17px;
-    background: $label-background;
-    color: $label-color;
-    font-weight: bold;
-    padding: 2px 5px;
-    font-size: 12px;
-    text-align: center;
-    transform: translateX(-50%);
-    margin-left: 1em;
-    box-shadow: $label-shadow;
-    min-width: 30px;
-    white-space: nowrap;
-
-    &:after {
-      content: '';
-      position: absolute;
-      bottom: -10px;
-      height: 0;
-      width: 0;
-      left: 0;
-      right: 0;
-      margin: auto;
-      border: 5px solid transparent;
-      border-top-color: $label-background;
-    }
+  &::-webkit-slider-runnable-track {
+    @apply .w-full .h-4 .cursor-pointer .bg-transparent .border-0 .rounded-none;
+    animate: 0.2s;
   }
 
-  &__wrapper {
-    position: relative;
-    display: flex;
-    align-items: center;
-  }
-
-  &__track {
-    width: 100%;
-    position: absolute;
-    z-index: 0;
-    height: 3px;
-    background: $slider-track-background;
-
-    &--rectangular {
-      height: $slider-track-height;
-    }
-  }
-
-  &__input {
+  // Thumb
+  &::-webkit-slider-thumb {
+    @apply .rounded-sm .shadow-md .cursor-pointer .h-5 .w-6 .-mt-2px .bg-blue;
+    @apply .border-none;
     -webkit-appearance: none;
-    margin: 10px 0;
+  }
+  &::-moz-range-thumb {
+    @apply .rounded-sm .shadow-md .cursor-pointer .h-5 .w-6 .-mt-2px .bg-blue;
+    @apply .border-none;
+  }
+  &::-ms-thumb {
+    @apply .rounded-sm .shadow-md .cursor-pointer .h-5 .w-6 .-mt-2px .bg-blue;
+    @apply .border-none;
+  }
+
+  // Track
+
+  &:focus::-webkit-slider-runnable-track {
+    @apply .bg-transparent;
+  }
+
+  &::-moz-range-track {
     width: 100%;
-    background: none;
-    padding: 0;
-    z-index: 1;
-    position: relative;
+    height: 10px;
+    cursor: pointer;
+    animate: 0.2s;
+    background: transparent;
+    border-radius: 0;
+  }
 
-    &:focus {
-      outline: none;
-    }
-    &::-webkit-slider-runnable-track {
-      width: 100%;
-      height: 10px;
-      cursor: pointer;
-      animate: 0.2s;
-      background: transparent;
-      border-radius: 0;
-      border: none;
-    }
-
-    // Thumb
-    &::-webkit-slider-thumb {
-      height: $thumb-size;
-      width: $thumb-size;
-      border-radius: 50%;
-      cursor: pointer;
-      -webkit-appearance: none;
-      margin-top: -5px;
-      background: $thumb-background;
-    }
-    &::-moz-range-thumb {
-      height: $thumb-size;
-      width: $thumb-size;
-      border-radius: 50%;
-      background: $thumb-background;
-      cursor: pointer;
-      border: none;
-    }
-    &::-ms-thumb {
-      height: $thumb-size;
-      width: $thumb-size;
-      border-radius: 50%;
-      background: $thumb-background;
-      cursor: pointer;
-    }
-
-    // Track
-
-    &:focus::-webkit-slider-runnable-track {
-      background: transparent;
-    }
-
-    &::-moz-range-track {
-      width: 100%;
-      height: 10px;
-      cursor: pointer;
-      animate: 0.2s;
-      background: transparent;
-      border-radius: 0;
-    }
-
-    &::-ms-track {
-      width: 100%;
-      height: 10px;
-      cursor: pointer;
-      animate: 0.2s;
-      background: transparent;
-      border-color: transparent;
-      border-width: 10px 0;
-      border-radius: 0;
-      color: transparent;
-    }
-    &::-ms-fill-lower {
-      background: transparent;
-      border: none;
-      border-radius: 0;
-    }
-    &::-ms-fill-upper {
-      background: transparent;
-      border: none;
-      border-radius: 0;
-    }
+  &::-ms-track {
+    width: 100%;
+    height: 10px;
+    cursor: pointer;
+    animate: 0.2s;
+    background: transparent;
+    border-color: transparent;
+    border-width: 10px 0;
+    border-radius: 0;
+    color: transparent;
+  }
+  &::-ms-fill-lower {
+    background: transparent;
+    border: none;
+    border-radius: 0;
+  }
+  &::-ms-fill-upper {
+    background: transparent;
+    border: none;
+    border-radius: 0;
   }
 }
 </style>

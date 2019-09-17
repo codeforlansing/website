@@ -49,9 +49,9 @@
             </figcaption>
             <criteria-slider
               v-model="slider"
+              :max="captions.length"
               class="flex-none self-end"
               min="0"
-              max="5"
               step="0.1"
             />
           </figure>
