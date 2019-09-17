@@ -44,12 +44,8 @@
             "
           >
             <figcaption class="flex-auto">
-              <h4 class="text-blue">Significant experience</h4>
-              <p>
-                Strong track record with deep commitment and understanding of
-                the issue and community. Has leadership experience, a support
-                network, and relevant knowledge to lead this work.
-              </p>
+              <h4 class="text-blue">{{ caption.heading }}</h4>
+              <p>{{ caption.description }}</p>
             </figcaption>
             <criteria-slider
               v-model="slider"
@@ -76,7 +72,37 @@ export default {
   },
   data() {
     return {
-      slider: '2.5'
+      slider: '2.5',
+      captions: [
+        {
+          heading: 'Zero',
+          description: 'Zero description'
+        },
+        {
+          heading: 'One',
+          description: 'One description'
+        },
+        {
+          heading: 'Two',
+          description: 'Two description'
+        },
+        {
+          heading: 'Three',
+          description: 'Three description'
+        },
+        {
+          heading: 'Four',
+          description: 'Four description'
+        }
+      ]
+    }
+  },
+  computed: {
+    caption() {
+      const index = Math.floor(this.slider)
+      return index < this.captions.length
+        ? this.captions[index]
+        : this.captions[this.captions.length - 1]
     }
   }
 }

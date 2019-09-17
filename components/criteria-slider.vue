@@ -2,25 +2,10 @@
   <div class="slider relative w-full flex flex-col">
     <div class="slider__wrapper">
       <div
-        v-if="!hideLabel"
         :style="{ left: position }"
         class="slider__label"
       >{{ sliderLabel }}</div>
-      <div
-        :class="{'slider__track--rectangular': !raising}"
-        class="slider__track"
-      >
-        <div
-          v-if="raising"
-          :style="{ 'border-left-width': sliderWidth + 'px' }"
-          class="slider__track-top"
-        />
-        <div
-          v-if="raising"
-          :style="{ 'border-right-width': sliderWidth + 'px' }"
-          class="slider__track-bottom"
-        />
-      </div>
+      <div class="slider__track slider__track--rectangular"/>
       <input
         ref="slider"
         v-model="sliderValue"
@@ -63,16 +48,6 @@ export default {
       type: String,
       required: false,
       default: '1'
-    },
-    hideLabel: {
-      type: Boolean,
-      required: false,
-      default: false
-    },
-    raising: {
-      type: Boolean,
-      required: false,
-      default: false
     }
   },
   data() {
@@ -204,28 +179,6 @@ $thumb-size: 20px;
     &--rectangular {
       height: $slider-track-height;
     }
-  }
-
-  &__track-top,
-  &__track-bottom {
-    content: '';
-    width: 100%;
-    position: absolute;
-    width: 0;
-    height: 0;
-    border-style: solid;
-  }
-
-  &__track-top {
-    top: -6px;
-    border-width: 0 0 6px 500px;
-    border-color: transparent transparent $slider-track-background transparent;
-  }
-
-  &__track-bottom {
-    top: 3px;
-    border-width: 0 500px 6px 0;
-    border-color: transparent $slider-track-background transparent transparent;
   }
 
   &__input {
