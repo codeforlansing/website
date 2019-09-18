@@ -9,7 +9,7 @@
         <section-heading
           white
           heading="Criteria"
-          subheading="Use the sliders to see how we evaluate projects."
+          subheading="Use the sliders to see how we evaluate new projects."
           class="
             w-full py-16 mb-0 sm:mt-10 mx-auto sm:mx-0 bg-blue-dark
             sm:w-1/2 md:w-2/5 sm:py-6 sm:rounded-lg sm:shadow-md
@@ -24,36 +24,14 @@
           container mx-auto flex flex-wrap content-center justify-around py-16
         "
       >
-        <div class="flex flex-wrap bg-white rounded-lg shadow-md p-10 m-10">
-          <div class="w-full md:w-1/3 pb-4 md:pb-0 md:pr-10">
-            <h3 class="text-center text-red-medium">
-              Personal Commitment
-            </h3>
-            <p>
-              Applicant has demonstrated personal and professional experience
-              needed to achieve intended results. They have a relevant track
-              record and understanding of the issues.
-            </p>
-          </div>
-          <figure
-            class="
-              w-full text-center md:w-2/3 border-grey-light
-              border-t-2 md:border-t-0 md:border-l-2
-              pt-6 md:pt-0 md:pl-10
-              flex flex-col
-            "
-          >
-            <figcaption class="flex-auto">
-              <h4 class="text-blue">{{ caption.heading }}</h4>
-              <p>{{ caption.description }}</p>
-            </figcaption>
-            <criteria-slider
-              v-model="slider"
-              :max="captions.length"
-              class="flex-none self-end"
-            />
-          </figure>
-        </div>
+        <criteria-card
+          v-for="(criterion, index) in criteria"
+          :key="index"
+          :title="criterion.title"
+          :description="criterion.description"
+          :captions="criterion.captions"
+          class="w-full"
+        />
       </div>
     </div>
   </section>
@@ -61,46 +39,17 @@
 
 <script>
 import sectionHeading from '~/components/section-heading'
-import criteriaSlider from '~/components/criteria-slider'
+import criteriaCard from '~/components/card--criteria'
+import criteria from '~/config/criteria'
 
 export default {
   components: {
-    criteriaSlider,
-    sectionHeading
+    sectionHeading,
+    criteriaCard
   },
   data() {
     return {
-      slider: '2.5',
-      captions: [
-        {
-          heading: 'Zero',
-          description: 'Zero description'
-        },
-        {
-          heading: 'One',
-          description: 'One description'
-        },
-        {
-          heading: 'Two',
-          description: 'Two description'
-        },
-        {
-          heading: 'Three',
-          description: 'Three description'
-        },
-        {
-          heading: 'Four',
-          description: 'Four description'
-        }
-      ]
-    }
-  },
-  computed: {
-    caption() {
-      const index = Math.floor(this.slider)
-      return index < this.captions.length
-        ? this.captions[index]
-        : this.captions[this.captions.length - 1]
+      criteria
     }
   }
 }
