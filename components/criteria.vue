@@ -51,8 +51,6 @@
               v-model="slider"
               :max="captions.length"
               class="flex-none self-end"
-              min="0"
-              step="0.1"
             />
           </figure>
         </div>

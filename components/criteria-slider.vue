@@ -1,5 +1,5 @@
 <template>
-  <div class="relative w-full flex flex-col">
+  <div class="relative w-full flex flex-col mt-16">
     <div class="relative flex items-center">
       <div
         :style="{ left: position }"
@@ -14,12 +14,54 @@
         v-model="sliderValue"
         :min="sliderMin"
         :max="sliderMax"
-        :step="step"
-        class="relative z-10 p-0 w-full mx-0 bg-transparent focus:outline-none"
+        :step="sliderSteps"
+        class="
+          relative z-10 p-0 w-full mx-0 bg-transparent focus:outline-none
+        "
         type="range"
         @input="update"
         @change="change"
       >
+    </div>
+    <div
+      class="w-full flex flex-row justify-around px-9px sm:px-6px mt-1"
+    >
+      <div
+        v-for="position in sliderPositions"
+        :key="position"
+      >
+        <div
+          v-if="position == Math.floor(position)"
+        >
+          <div
+            class="
+              inline-block border-l border-r border-grey w-0 max-w-0 h-4 mx-auto
+            "
+          />
+        </div>
+        <div
+          v-else
+          class="border-l border-r border-grey-light w-0 h-2"
+        />
+      </div>
+    </div>
+    <div
+      class="w-full flex flex-row justify-around px-1 sm:px-px mt-px"
+    >
+      <div
+        v-for="position in sliderPositions"
+        :key="position"
+      >
+        <div
+          v-if="position == Math.floor(position)"
+        >
+          <div
+            class="
+              inline-block text-grey w-0 max-w-0 h-4 mx-auto
+            "
+          >{{ Math.floor(position) }}</div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -32,28 +74,20 @@ export default {
       required: false,
       default: ''
     },
-    min: {
-      type: String,
-      required: false,
-      default: '0'
-    },
     max: {
-      type: String,
+      type: Number,
       required: false,
-      default: '100'
-    },
-    step: {
-      type: String,
-      required: false,
-      default: '1'
+      default: 5
     }
   },
   data() {
     return {
       sliderWidth: 0,
-      sliderValue: null,
-      sliderMax: null,
-      sliderMin: null
+      sliderValue: this.value,
+      sliderMax: this.max,
+      sliderMin: 0,
+      sliderSteps: 0.1,
+      sliderPositions: []
     }
   },
   computed: {
@@ -67,23 +101,30 @@ export default {
       const val = this.sliderValue
       // Adjust by 24 to account for thumbsize (.w-6 => 6 * 4 = 24px)
       const width = this.sliderWidth - 24
-      // Calculate percentage between left and right of input
       const percent = (val - this.sliderMin) / (this.sliderMax - this.sliderMin)
       const position = width * percent
       return `${position}px`
     }
   },
   created() {
-    this.sliderMin = this.min
-    this.sliderMax = this.max
-    this.sliderValue = this.value
+    this.sliderPositions = Array.from(
+      { length: 1 + this.max / this.sliderSteps },
+      (v, k) => (k * this.sliderSteps).toFixed(1)
+    )
   },
   mounted() {
-    this.$nextTick(() => {
-      this.sliderWidth = this.$refs.slider.clientWidth
-    })
+    this.$nextTick(this.handleResize)
+  },
+  ready() {
+    window.addEventListener('resize', this.handleResize)
+  },
+  beforeDestroy() {
+    window.removeEventListener('resize', this.handleResize)
   },
   methods: {
+    handleResize() {
+      this.sliderWidth = this.$refs.slider.clientWidth
+    },
     update() {
       this.$emit('input', this.sliderOutputValue)
     },
@@ -95,6 +136,23 @@ export default {
 </script>
 
 <style lang="scss">
+.px-7px {
+  padding-left: 7px;
+  padding-right: 7px;
+}
+
+.px-9px {
+  padding-left: 9px;
+  padding-right: 9px;
+}
+
+@media (min-width: 576px) {
+  .sm\:px-6px {
+    padding-left: 6px;
+    padding-right: 6px;
+  }
+}
+
 input {
   -webkit-appearance: none;
 
