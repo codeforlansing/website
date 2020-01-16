@@ -55,6 +55,12 @@ export default {
           icon: 'github'
         },
         {
+          name: 'Email',
+          href: urls.email,
+          iconSet: 'fas',
+          icon: 'envelope'
+        },
+        {
           name: 'Facebook',
           href: urls.facebook,
           iconSet: 'fab',
