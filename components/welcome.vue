@@ -17,7 +17,7 @@
           subheading="A Code for America initiative."
         />
         <p class="mt-0 mb-4">
-          We use tech volunteerism to to solve problems that local nonprofits
+          We use tech volunteerism to solve problems that local nonprofits
           and civic organizations are experiencing.
         </p>
         <p class="mt-0 mb-4">
